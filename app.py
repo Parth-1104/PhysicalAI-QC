@@ -110,4 +110,4 @@ with gr.Blocks(title="EgoGuard-QC — Production Data QC & Provenance") as demo:
     tamper_btn.click(test_tamper, inputs=[app_state], outputs=[tamper_out])
 
 if __name__ == "__main__":
-    demo.launch(server_name="0.0.0.0", server_port=7860)
+    demo.launch(ssr_mode=False)
